@@ -2,19 +2,22 @@
 
 <?php
 // database connection
-   $servername="localhost"; //usually "localhost" for xampp
-   $username ="root"; // default MySQL user for XAMPP
-    $password = "";  //DEFAULT PASSWORD IS EMPTY FOR XAMPP
-    $dbname = "signup"; //replace with your databse name
+  //  $servername="localhost"; //usually "localhost" for xampp
+  //  $username ="root"; // default MySQL user for XAMPP
+  //   $password = "";  //DEFAULT PASSWORD IS EMPTY FOR XAMPP
+  //   $dbname = "signup"; //replace with your databse name
 
-    // create connection
-    $conn = new mysqli($servername, $username, $password,$dbname);
+  //   // create connection
+  //   $conn = new mysqli($servername, $username, $password,$dbname);
 
-    // check connection
-    if($conn->connect_error)
-    {
-      die("connection failed:" . $conn->connect_error);
-    }
+  //   // check connection
+  //   if($conn->connect_error)
+  //   {
+  //     die("connection failed:" . $conn->connect_error);
+  //   }
+
+    // below is to include the access details of our mysql database
+  include 'db_connection.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") 
     {

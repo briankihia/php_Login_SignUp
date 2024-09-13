@@ -2,21 +2,21 @@
 
   session_start();
   // below is to include the access details of our mysql database
-  // include 'db_connection.php';
+  include 'db_connection.php';
 
 
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "signup";
+//   $servername = "localhost";
+//   $username = "root";
+//   $password = "";
+//   $dbname = "signup";
 
-  // create connection 
- $conn = new mysqli($servername, $username, $password, $dbname);
+//   // create connection 
+//  $conn = new mysqli($servername, $username, $password, $dbname);
 
-//  check connection
-if ($conn-> connect_error) {
-  die("Connection failed:" . $conn-> connect_error);
-}
+// //  check connection
+// if ($conn-> connect_error) {
+//   die("Connection failed:" . $conn-> connect_error);
+// }
 
   // get the submitted data
   if($_SERVER["REQUEST_METHOD"] == "POST"){
