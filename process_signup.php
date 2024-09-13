@@ -23,6 +23,9 @@
       $email = $_POST["email"];
       $password = $_POST['password'];
       $contact = $_POST['contact'];
+      // $role = $_POST['role'];
+
+      $role = 'user';   // by default a user role is set to user, admin role is only assigned by developer/ superuser in database
 
 
       // hashing the password so that password entered by the user will be stored differently in the database for security
@@ -31,7 +34,7 @@
     
 
     // sql quesry to insert the data into mysql table
-    $sql = "INSERT INTO user_info (username, email, password, contact) VALUES ('$username', '$email','$hashed_password', '$contact')";
+    $sql = "INSERT INTO user_info (username, email, password, contact, role) VALUES ('$username', '$email','$hashed_password', '$contact', '$role')";
 
     if($conn->query($sql) === TRUE)
     {

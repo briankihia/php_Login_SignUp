@@ -12,7 +12,14 @@
     E-mail: <input type="text" name="email"><br>
     Password: <input type="text" name="password"><br>
     Contact: <input type="text" name="contact"><br>
-    <input type="submit">
+    <!-- Role:
+    <select name="role" >
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+    </select><br> -->
+
+    <!-- here a user can only be registered as a user, for admins only a superuser or a developer with access to the database can set anyone as an admin -->
+    <input type="submit" value="Sign up">
   </form>
   
 </body>
