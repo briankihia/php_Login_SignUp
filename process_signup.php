@@ -19,7 +19,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") 
     {
       // Capture the form data
-      $name = $_POST['name'];
+      $username = $_POST['username'];
       $email = $_POST["email"];
       $password = $_POST['password'];
       $contact = $_POST['contact'];
@@ -31,7 +31,7 @@
     
 
     // sql quesry to insert the data into mysql table
-    $sql = "INSERT INTO user_info (name, email, password, contact) VALUES ('$name', '$email','$hashed_password', '$contact')";
+    $sql = "INSERT INTO user_info (username, email, password, contact) VALUES ('$username', '$email','$hashed_password', '$contact')";
 
     if($conn->query($sql) === TRUE)
     {

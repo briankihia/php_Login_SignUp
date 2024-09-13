@@ -8,7 +8,7 @@
 <body>
 
   <form action="process_signup.php" method="POST">
-    Name: <input type="text" name="name"><br>
+    Username: <input type="text" name="username"><br>
     E-mail: <input type="text" name="email"><br>
     Password: <input type="text" name="password"><br>
     Contact: <input type="text" name="contact"><br>
